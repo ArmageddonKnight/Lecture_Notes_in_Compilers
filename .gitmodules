@@ -1,0 +1,3 @@
+[submodule "frameworks/gcc"]
+	path = infra/gcc
+	url = https://github.com/ArmageddonKnight/Lecture_Notes_on_Compilers
