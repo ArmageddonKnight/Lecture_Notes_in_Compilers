@@ -1,2 +1,3 @@
-# Lecture_Notes_On_Compilers
+# Lecture Notes on Compilers
+
 This repository contains lecture notes on compilers.
