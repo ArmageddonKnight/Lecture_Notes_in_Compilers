@@ -1,0 +1,15 @@
+version: '2.3'
+
+services:
+    dev:
+        image: noc:dev
+        build:
+            context: .
+            dockerfile: Dockerfile
+        network_mode: "host"
+        environment:
+            - CMAKE_EXPORT_COMPILE_COMMANDS=1
+        volumes:
+            - .:/mnt
+        pid: host
+        privileged: true
