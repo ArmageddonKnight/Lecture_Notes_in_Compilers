@@ -74,3 +74,4 @@ stamp-*
 Makefile
 build-x86_64-pc-linux-gnu
 host-x86_64-pc-linux-gnu
+x86_64-pc-linux-gnu
