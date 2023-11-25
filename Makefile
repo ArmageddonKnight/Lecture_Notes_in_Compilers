@@ -1,6 +1,6 @@
 GCC_VERSION := 13.1
 
-.PHONY: gcc-prerequisites gcc-configure gcc-build
+.PHONY: gcc-prerequisites gcc-configure gcc-build gcc-compile_commands
 
 gcc-prerequisites:
 	cd infra/gcc && ./contrib/download_prerequisites

@@ -2,7 +2,8 @@ FROM ubuntu:22.04
 
 RUN sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/' ~/.bashrc
 
-RUN apt-get update
+# https://stackoverflow.com/a/71982514/6320608
+RUN rm -f /etc/apt/apt.conf.d/docker-clean && apt-get update
 
 RUN apt-get install -y \
         vim \

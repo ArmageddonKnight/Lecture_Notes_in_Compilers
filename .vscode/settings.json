@@ -1,0 +1,9 @@
+{
+        "search.exclude": {
+                "infra/gcc/build-x86_64-pc-linux-gnu": true,
+                "infra/gcc/host-x86_64-pc-linux-gnu": true,
+                "infra/gcc/x86_64-pc-linux-gnu": true,
+        },
+        "makefile.makefilePath": "infra/gcc/Makefile",
+        "makefile.makeDirectory": "infra/gcc"
+}
