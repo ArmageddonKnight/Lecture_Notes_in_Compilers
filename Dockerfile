@@ -17,7 +17,8 @@ RUN apt-get install -y flex bison flexc++ bisonc++
 
 RUN rm -rf /var/lib/apt/lists/*
 
-RUN git config --global core.editor vim && \
+RUN git config --global --add safe.directory "*" && \
+        git config --global core.editor vim && \
         git config --global credential.helper store && \
         git config --global pull.rebase false && \
         git config --global user.name "ubuntu" && \
