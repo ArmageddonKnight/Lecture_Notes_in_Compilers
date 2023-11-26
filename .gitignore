@@ -70,7 +70,7 @@ stamp-*
 /gmp*
 /isl*
 
-# <bojian/NOC>
+# <bojian/NIC>
 Makefile
 build-x86_64-pc-linux-gnu
 host-x86_64-pc-linux-gnu
