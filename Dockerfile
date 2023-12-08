@@ -10,7 +10,7 @@ RUN apt-get install -y \
         wget \
         git \
         build-essential \
-        cmake
+        python3-dev
 
 # GCC
 # - Package `dejagnu` is for running the testsuites.
@@ -24,6 +24,11 @@ RUN apt-get install -y \
         gcc-11-plugin-dev
 
 RUN rm -rf /var/lib/apt/lists/*
+
+RUN wget https://bootstrap.pypa.io/get-pip.py && \
+    python3 get-pip.py && rm -f get-pip.py
+
+RUN pip3 install cmake cmake_format
 
 RUN git config --global --add safe.directory "*" && \
         git config --global core.editor vim && \
