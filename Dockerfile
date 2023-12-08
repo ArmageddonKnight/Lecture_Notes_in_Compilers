@@ -9,11 +9,19 @@ RUN apt-get install -y \
         vim \
         wget \
         git \
-        bear \
-        build-essential
+        build-essential \
+        cmake
 
 # GCC
-RUN apt-get install -y flex bison flexc++ bisonc++
+# - Package `dejagnu` is for running the testsuites.
+# - Package `gcc-11-plugin-dev` is for developing GCC plugins.
+RUN apt-get install -y \
+        flex \
+        bison \
+        flexc++ \
+        bisonc++ \
+        dejagnu \
+        gcc-11-plugin-dev
 
 RUN rm -rf /var/lib/apt/lists/*
 
